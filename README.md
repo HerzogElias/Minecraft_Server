@@ -4,7 +4,6 @@
 2. [Prerequisites](#Prerequisites)  
 3. [Quickstart](#Quickstart)  
 4. [Usage](#Usage)  
-   4.1 [Check Server Healthy Connection](#Check Server Healthy Connection)  
 
 ## Descripton
 This is a Description of a Own created Minecraft Server. 
