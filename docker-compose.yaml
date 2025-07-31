@@ -1,0 +1,12 @@
+version: '3.9'
+services:
+  mc-server:
+    build: .
+    ports:
+      - "8888:25565"
+    restart: always
+    volumes:
+      - local_db:/minecraft
+
+volumes:
+  local_db:
