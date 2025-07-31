@@ -13,7 +13,7 @@ wget https://piston-data.mojang.com/v1/objects/6bce4ef400e4efaa63a13d5e6f6b500be
 
 3. Copy your Donwolad on your Root Directory of your Project. 
 ```bash
-cp server.jar /minecraft
+cp server.jar /Minecraft_Server
 ```
 
 ## Usage
