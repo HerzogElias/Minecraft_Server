@@ -5,6 +5,7 @@ services:
       - "8888:25565"
     restart: always
     volumes:
+      - ./server.properties:/minecraft/server.properties
       - local_db:/minecraft
 
 volumes:

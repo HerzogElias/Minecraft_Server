@@ -11,7 +11,6 @@ This Minecraft Server is doploled by a Docker Container with Docker Compose.
 
 
 ## Prerequisites
-V Server with Ubuntu 
 Docker 
 Docker Compose 
 
@@ -19,7 +18,7 @@ Docker Compose
 ## Quickstart 
 1. Clone the github Project: 
 ```bash
-https://github.com/HerzogElias/Minecraft_Server/tree/docker_image
+git clone git@github.com:HerzogElias/Minecraft_Server.git
 ```
 
 2. Download your Minecraft Server from: 
@@ -44,35 +43,58 @@ docker compose up --build
 
 ## Usage
 ### Check Sever Heatly Connection: 
-1. Create an Python Virtuell Environment: 
+Check your Minecraft Server Status with the following command: 
 ```bash
-python -m venv venv
+mcstatus localhost:8888 status
 ```
 
-2. Activate your Virtuell Environment: 
+### Configurateion of your Minecraft Server 
+You can configurate your Server on the server.properties File: 
 ```bash
-source venv/bin/activate  
+motd
+level-name
+gamemode
+difficulty
+pvp
+max-players
+online-mode
+allow-nether
+enable-command-block
+spawn-animals
+spawn-monsters
+spawn-npcs
+generate-structures
+view-distance
+white-list
+server-port
+server-ip
+hardcore
+force-gamemode
+enable-rcon
+rcon.password
 ```
 
-3.Install Requirements on your Virtuell Environment: 
+If you dont configurate your own Server Properties, you have s Default Configuration. 
 ```bash
-pip install -r requirements.txt
+motd=A Minecraft Server
+level-name=world
+gamemode=survival
+difficulty=easy
+pvp=true
+max-players=20
+online-mode=true
+allow-nether=true
+enable-command-block=false
+spawn-animals=true
+spawn-monsters=true
+spawn-npcs=true
+generate-structures=true
+view-distance=10
+white-list=false
+server-port=25565
+server-ip=
+hardcore=false
+force-gamemode=false
+enable-rcon=false
+rcon.password=geheim
 ```
-
-4. Take your IP Adress in the Python testing.py 
-```bash
-server = JavaServer.lookup("127.0.1.:8888")
-```
-
-5. Execute the Python file testing.py on your Virtuell Environment: 
-```bash
-python testing.py
-```
-
-6. You get a Solution like this - if your Server is running: 
-```bash
-The server has 0 player(s) online and replied in 97.25204199639848 ms
-The server replied in 82.62908300039841 ms
-```
-
-Very nice - Your Server is running. 
