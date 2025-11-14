@@ -1,0 +1,12 @@
+services:
+  mc-server:
+    build: .
+    ports:
+      - "8888:25565"
+    restart: always
+    volumes:
+      - ./server.properties:/minecraft/server.properties
+      - local_db:/minecraft
+
+volumes:
+  local_db:
